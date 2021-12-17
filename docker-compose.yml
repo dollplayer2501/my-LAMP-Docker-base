@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  #
+  web_service:
+    container_name: web_container
+    image: web_image
+    build: ./web/
+    depends_on:
+      - mysql_service
+    restart: always
+    volumes:
+      - ./html:/var/www
+    ports:
+      - 8080:80
+    working_dir: /var
+  #
+  mysql_service:
+    container_name: mysql_container
+    image: mysql_image
+    build: ./mysql/
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ./mysql/initdb.d:/docker-entrypoint-initdb.d
+      - ./mysql/database:/var/lib/mysql
+    ports:
+      - "3307:3306"
