@@ -40,7 +40,13 @@
 		$sql = 'select * from `YUKKURI_TABLE`';
 		echo '- - -'.PHP_EOL;
 		foreach ($db_->query($sql) as $row) {
-			echo sprintf('%03d - %s%s', $row['id'], $row['namae'], PHP_EOL);
+			echo sprintf(
+				'%03d - %-20s - %s %s%s',
+				$row['id'],
+				$row['namae'],
+				$row['created_at'],
+				$row['updated_at'],
+				PHP_EOL);
 		}
 		echo '- - -'.PHP_EOL;
 	};

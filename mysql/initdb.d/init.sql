@@ -10,8 +10,10 @@ USE `YUKKURI_DATABASE`;
 
 DROP TABLE IF EXISTS `YUKKURI_TABLE`;
 CREATE TABLE `YUKKURI_TABLE` (
-  `id` int(11) NOT NULL auto_increment,
-  `namae` varchar(64) collate utf8_unicode_ci default NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `namae` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
