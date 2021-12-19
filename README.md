@@ -5,9 +5,9 @@
   - `PHP Version 5.3.10-1ubuntu3.48`
   - `php.ini` is via Apache and CLI
 - Apache 2.X
-- MySQL 5.7
-  - from `mysql:5.7` of `Debian 10.11`
+- MySQL 5.6
+  - from `mysql:5.6` of `Debian 9.13`
 
 Describe the remaining tasks below.
 
-- PHP's error logging from Host's environment
+- PHP and MySQL error logging from _Host's environment_

@@ -30,7 +30,7 @@ COPY ./conf.d/imagick.ini /etc/php5/conf.d/imagick.ini
 COPY ./conf.d/memcache.ini /etc/php5/conf.d/memcache.ini
 COPY ./conf.d/ssh2.ini /etc/php5/conf.d/ssh2.ini
 
-COPY .//run /usr/local/bin/run
+COPY ./run /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
 RUN a2enmod rewrite
 

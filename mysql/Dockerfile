@@ -1,6 +1,6 @@
-# Debian 10.11
+# Debian 9.13
 
-FROM mysql:5.7
+FROM mysql:5.6
 
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
