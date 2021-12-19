@@ -11,3 +11,4 @@
 Describe the remaining tasks below.
 
 - PHP and MySQL error logging from _Host's environment_
+- PHP 7.4 environment
