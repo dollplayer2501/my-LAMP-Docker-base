@@ -10,6 +10,7 @@
 	<ol>
 		<li><a href="./database.php">goto database</a></li>
 		<li><a href="./image-form.php">goto image-form</a></li>
+		<li><a href="./checking.php">goto various check</a></li>
 	</ol>
 
 <?php phpinfo(); ?>

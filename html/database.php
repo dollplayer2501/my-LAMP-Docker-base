@@ -9,10 +9,6 @@
 <body>
 <pre>
 <?php
-	echo 'ニッぽん語'.PHP_EOL;
-	echo date('Y年m月d日 H時i分s秒').PHP_EOL;
-
-
 	$dbtype   = 'mysql';
 	$host     = 'mysql_container';  // not 'localhost', '127.0.0.1'
 	$port     = '3306';             // not '3307'
