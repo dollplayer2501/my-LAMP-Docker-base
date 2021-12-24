@@ -9,6 +9,8 @@ services:
     depends_on:
       - mysql_service
     restart: always
+    environment:
+      TZ: "Asia/Tokyo"
     volumes:
       - ./html:/var/www
     ports:
@@ -27,7 +29,6 @@ services:
       MYSQL_PASSWORD: YUKKURI_PASSWORD
       TZ: "Asia/Tokyo"
     volumes:
-      # - ./mysql/initdb.d:/docker-entrypoint-initdb.d
       - ./mysql/database:/var/lib/mysql
     ports:
       - "3307:3306"

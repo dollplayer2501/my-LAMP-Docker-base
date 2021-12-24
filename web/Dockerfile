@@ -2,8 +2,6 @@
 
 FROM ubuntu:12.04
 
-RUN cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
-
 RUN sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 
 RUN apt-get -qq update \
